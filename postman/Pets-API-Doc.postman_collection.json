@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "f3d4e6b3-a30d-4b9a-82a8-47ca7eb177df",
+		"name": "Pets-API-Doc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31805104"
+	},
+	"item": [
+		{
+			"name": "Commands Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/commands/ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"commands",
+						"ping"
+					]
+				},
+				"description": "Test la connectivité avec l'API"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieves all pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets"
+					]
+				},
+				"description": "Liste tout les animaux"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieves a pet by its ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/pets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets",
+						"1"
+					]
+				},
+				"description": "Renvoi un animal via son ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieves all pets owned by a specific owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/pets/owner/Peter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets",
+						"owner",
+						"Peter"
+					]
+				},
+				"description": "Liste tous les animaux d'un propriétaire"
+			},
+			"response": []
+		},
+		{
+			"name": "Adds a new pet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7,\r\n    \"name\": \"Buddy\",\r\n    \"age\": 4,\r\n    \"owner\": \"Alice\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/pets/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets",
+						"add"
+					]
+				},
+				"description": "Ajoute un animal"
+			},
+			"response": []
+		},
+		{
+			"name": "Updates an existing pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Milou\",\r\n    \"age\": 12,\r\n    \"owner\": \"Peter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/pets/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets",
+						"update",
+						"1"
+					]
+				},
+				"description": "Modifie les informations d'un animal via son ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletes a pet by its ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/pets/remove/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"pets",
+						"remove",
+						"1"
+					]
+				},
+				"description": "Supprime un animal via son ID"
+			},
+			"response": []
+		}
+	]
+}

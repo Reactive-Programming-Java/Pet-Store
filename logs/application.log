@@ -1,0 +1,21 @@
+2025-01-09 18:03:10 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8084
+2025-01-13 09:21:52 [main] INFO  fr.elsior.wfx.test.Application - Starting Application using Java 11.0.25 on Elimane with PID 36652 (C:\Projets\April\petshop\base_petshop - copie\java\target\classes started by Elima in C:\Projets\April\petshop\base_petshop - copie)
+2025-01-13 09:21:52 [main] INFO  fr.elsior.wfx.test.Application - No active profile set, falling back to default profiles: default
+2025-01-13 09:21:54 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8084 is already in use
+2025-01-13 09:21:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-13 09:21:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8084 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
+

@@ -1,0 +1,2 @@
+2025-01-09 07:10:09 [main] ERROR f.n.t.test.services.PetServiceImpl - No pets found for owner: Unknown
+2025-01-09 07:17:42 [main] ERROR f.n.t.test.services.PetServiceImpl - No pets found for owner: Unknown

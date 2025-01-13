@@ -1,0 +1,13 @@
+.idea
+web/app/components
+web/app/bower_components
+web/app/dist
+node_modules
+java/target/
+*.iml
+.classpath
+.project
+.settings
+.DS_Store
+**/package-lock.json
+**/yarn.lock
